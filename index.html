@@ -9,6 +9,11 @@
         <link rel="icon" href="imgmap.png">
         <link rel="stylesheet" href="style.css">
         <style>
+            body {
+                background: url(mainbgpc.webp) no-repeat;
+                background-size: cover;
+
+            }
             img {
                 display: block;
                 margin: 0 auto;
@@ -18,9 +23,17 @@
             #mobile {
                 display: none;
             }
-
+            #windows {
+                display: block;
+                margin: 0 auto;
+                margin-top: 200px;
+            }
 
             @media screen and (max-device-width: 400px) {
+                body {
+                    background: linear-gradient(90deg, rgba(107,17,26,1) 0%, rgba(214,29,29,1) 46%, rgba(210,33,34,1) 52%, rgba(156,39,39,1) 100%);
+                    background-size: cover;
+                }
                 h2 {
                     font-size: 16px;
                     padding: 6px;
@@ -35,6 +48,7 @@
                 }
                 #mobile {
                     display: flex;
+                    margin-top: 250px;
                 }
                 #windows {
                     display: none;
